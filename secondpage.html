@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="secondpage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rockwell&display=swap">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="main.html">
+            <h><img src="logo.png" alt="Logo"></h>
+        </a>
+        <div class="search-container">
+            <form action="secondpage.html" method="get">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" name="search" placeholder="Search Location..." oninput="showSuggestions(this.value)">
+                    <input type="image" src="Search_icon.png" alt="Search" class="search-icon">
+                    <div class="suggestions-box"></div>
+                </div>
+            </form>
+        </div>
+        <ul class="menu">
+            <li class="menu-item">
+                <div class="icon-text-container">
+                    <img src="assessment_icon.png" alt="Assessment Icon">
+                    <a href="#">ASSESSMENT</a>
+                </div>
+                <ul class="submenu">
+                        <a href="#">
+                            High
+                            <img src="red.png" alt="red icon">
+                        </a>
+                        <a href="#">
+                            Medium
+                            <img src="orange.png" alt="red icon">
+                        </a>
+                        <a href="#">
+                            Low
+                            <img src="yellow.jpg" alt="red icon">
+                        </a>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <div class="icon-text-container">
+                     <img src="precautions_icon.png" alt="PRECAUTIONS Icon">
+                     <a href="#">PRECAUTIONS</a>
+                </div>
+                <ul class="submenu">
+                    <li><a href="#">Subitem 2.1</a></li>
+                    <li><a href="#">Subitem 2.2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <iframe class="map background" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.00723974012!2d-122.4194152835507!3d37.774929503580735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580d1a805d045%3A0xdb47f8e5691a8b8c!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1606323438649!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <script src="suggestion.js"></script>
+</body>
+</html>
